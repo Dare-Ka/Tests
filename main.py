@@ -55,6 +55,3 @@ def get_folder(path):
     params = {'path': path}
     response = requests.get(url, headers=headers, params=params)
     return response.status_code
-
-print(create_folder('test_folder'))
-print(get_folder('test_folder'))
